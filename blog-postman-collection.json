@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "d1526a7e-d50f-4fbe-b44d-72e1a67f0db6",
+		"name": "Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30871409"
+	},
+	"item": [
+		{
+			"name": "List Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/users/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/users/1/"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/users/11/"
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/users/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/users/1/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"title\": \"sonnnn\",\n        \"completed\": false\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/1/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Todo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"completed\": true\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/1/todos/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"title\": \"titlee\",\n        \"body\": \"bodybodybodybodybodybodybodybodybody\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/1/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/users/1/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"name\": \"Kaan Bulut\",\n        \"email\": \"kaan@gmail.com\",\n        \"body\": \"Comment dsadasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/1/posts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post Comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/users/1/posts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Album",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"title\": \"album4\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/1/albums"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Albums",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/users/1/albums"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Photo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"title\": \"sadasf\",\n        \"url\": \"https://via.placeholder.com/150/f9cee5\",\n        \"thumbnailUrl\": \"https://via.placeholder.com/150/5e12c6\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/1/albums/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Album Photos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/users/1/albums/1"
+			},
+			"response": []
+		}
+	]
+}
