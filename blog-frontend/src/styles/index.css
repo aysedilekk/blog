@@ -1,0 +1,67 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+body {
+  background-color: #fff;
+}
+
+/*SIDEBAR */
+#app {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar {
+  height: 100vh;
+  width: 300px;
+  background-color: #D8D9DD;
+  color: #fff;
+  border-right: 1px solid #D8D9DD;
+  padding-top: 35px;
+}
+
+#content {
+  flex: 1;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  /*background-color: #F5F5F5;*/
+  color: #4F359B;
+  padding: 10px;
+}
+
+li:hover {
+  background-color: #F5F5F5;
+}
+
+.profile-box-border {
+  border-bottom: solid 1px #5C6672;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.scroll {
+  overflow: scroll;
+  height: 85vh;
+}
+
+.sidebar-footer{
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  list-style-type: none;
+  padding-bottom:5.5em;
+}
+
